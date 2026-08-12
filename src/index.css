@@ -1,0 +1,73 @@
+
+@import "tailwindcss";
+
+/* Global box sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Root elements */
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+/* Light theme */
+html {
+  background: #f8f5f0;
+  transition: background-color 0.3s ease;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f5f0;
+  color: #2d211b;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Dark theme */
+html.dark {
+  background: #181411;
+}
+
+body.dark-mode {
+  background: #181411;
+  color: #f5f5f4;
+}
+
+/* App pages */
+body.dark-mode .app-page {
+  background: #181411 !important;
+  color: #f5f5f4 !important;
+}
+
+/* Reusable cards */
+body.dark-mode .app-card {
+  background: #29231f !important;
+  color: #f5f5f4 !important;
+  border-color: #403831 !important;
+}
+
+/* Reusable text */
+body.dark-mode .app-text {
+  color: #f5f5f4 !important;
+}
+
+body.dark-mode .app-muted {
+  color: #a8a29e !important;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
